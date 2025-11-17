@@ -30,7 +30,7 @@ This event, in the meantime, is being handled by security engineers after you an
 
 ## Cybersecurity Incident Report
 
-Part 1: Description of the Issue
+Part 1: Description of the Issue  
 Several clients reported that they were unable to access the company’s website www.yummyrecipesforme.com. The error displayed was “destination port unreachable”. I performed a network analysis using tcpdump and received ICMP packets with the message “UDP port 53 unreachable”.
 
 Part 2: Incident Evaluation and Diagnosis
