@@ -31,27 +31,29 @@ This event, in the meantime, is being handled by security engineers after you an
 ## Cybersecurity Incident Report
 
 Part 1: Description of the Issue  
+
 Several clients reported that they were unable to access the company’s website www.yummyrecipesforme.com. The error displayed was “destination port unreachable”. I performed a network analysis using tcpdump and received ICMP packets with the message “UDP port 53 unreachable”.
 
 Part 2: Incident Evaluation and Diagnosis
- 1. When the issue was first reported: The issue was first reported when multiple clients were unable to access the company’s website www.yummyrecipesforme.com. The error message displayed was “destination port unreachable.”
+
+ 1. When the issue was first reported: The issue was first reported when multiple clients were unable to       access the company’s website www.yummyrecipesforme.com. The error message displayed was “destination       port unreachable.”
  
- 2. Description of initial symptoms: Users experienced long loading times followed by an error message, indicating that the browser could not reach the web server. This suggested a failure in the network communication process.
+ 2. Description of initial symptoms: Users experienced long loading times followed by an error message,        indicating that the browser could not reach the web server. This suggested a failure in the network        communication process.
  
- 3. Current status of the issue: After performing a network analysis using tcpdump, ICMP packets were observed with the message “UDP port 53 unreachable.” These responses were triggered by DNS queries sent via UDP to the server at IP address 203.0.113.2. This confirms that the DNS service was not reachable at the time of the incident.
+ 3. Current status of the issue: After performing a network analysis using tcpdump, ICMP packets were          observed with the message “UDP port 53 unreachable.” These responses were triggered by DNS queries         sent via UDP to the server at IP address 203.0.113.2. This confirms that the DNS service was not           reachable at the time of the incident.
  
- 4. Information discovered during investigation: The captured traffic shows that the browser attempted to resolve the domain name using DNS over UDP (port 53). However, the DNS server responded with ICMP error messages, indicating that no service was listening on that port. As a result, the domain name could not be resolved to an IP address, and the subsequent HTTPS request to the web server failed.
+ 4. Information discovered during investigation: The captured traffic shows that the browser attempted to      resolve the domain name using DNS over UDP (port 53). However, the DNS server responded with ICMP          error messages, indicating that no service was listening on that port. As a result, the domain name        could not be resolved to an IP address, and the subsequent HTTPS request to the web server failed.
  
  5. Next steps to resolve the issue:
  
-  -Verify whether the DNS service is running and actively listening on UDP port 53.
+    -Verify whether the DNS service is running and actively listening on UDP port 53.
  
-  -Check firewall or ACL rules that may be blocking incoming UDP traffic to port 53.
+    -Check firewall or ACL rules that may be blocking incoming UDP traffic to port 53.
  
-  -Review system and DNS logs for service failures or misconfigurations.
+    -Review system and DNS logs for service failures or misconfigurations.
  
-  -Deploy a temporary fallback DNS server to restore name resolution while the issue is being addressed.
+    -Deploy a temporary fallback DNS server to restore name resolution while the issue is being addressed.
  
- 6. Probable root cause of the issue: The ICMP message “UDP port 53 unreachable” suggests that the DNS server was either down, misconfigured, or blocked by a network security rule. Additionally, the possibility of a targeted attack cannot be ruled out. An attacker may have disrupted the DNS service through traffic saturation (DoS), firewall manipulation, or service tampering. Further investigation of system and firewall logs is recommended to determine whether malicious activity contributed to the incident.
+ 6. Probable root cause of the issue: The ICMP message “UDP port 53 unreachable” suggests that the DNS         server was either down, misconfigured, or blocked by a network security rule. Additionally, the            possibility of a targeted attack cannot be ruled out. An attacker may have disrupted the DNS service       through traffic saturation (DoS), firewall manipulation, or service tampering. Further investigation       of system and firewall logs is recommended to determine whether malicious activity contributed to the      incident.
 
 
