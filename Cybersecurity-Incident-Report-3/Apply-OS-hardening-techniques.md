@@ -80,6 +80,8 @@ To prevent future brute-force attacks, the following security measures are recom
 
  - It is strongly recommended to change all administrative passwords immediately when an employee with privileged access is terminated or leaves the organization. Failure to do so may result in unauthorized access, data compromise, or reputational damage.
 
+ - It is recommended to implement a policy for periodic password changes, especially for administrative accounts. Regular rotation of credentials helps reduce the risk of unauthorized access and ensures better security hygiene.
+
 
  
  
