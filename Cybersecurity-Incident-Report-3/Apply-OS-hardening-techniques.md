@@ -40,11 +40,11 @@ Your job is to document the incident in detail, including identifying the networ
 
 The following network protocols were involved:
 
-   DNS (Domain Name System): Used to resolve domain names to IP addresses during redirection.
+  - DNS (Domain Name System): Used to resolve domain names to IP addresses during redirection.
 
-   HTTP (Hypertext Transfer Protocol): Used to deliver the compromised web page and initiate the malware download.
+  - HTTP (Hypertext Transfer Protocol): Used to deliver the compromised web page and initiate the malware download.
 
-   TCP/IP: Underlying transport protocol used for all communications between browser and server.
+  - TCP/IP: Underlying transport protocol used for all communications between browser and server.
 
 ### Section 2: Document the incident
 
@@ -68,17 +68,17 @@ This confirms that the attacker used DNS manipulation and JavaScript injection t
 
 To prevent future brute-force attacks, the following security measures are recommended:
 
-   Enforce strong password policies: Disable default credentials and require complex passwords for all administrative accounts.
+ - Enforce strong password policies: Disable default credentials and require complex passwords for all administrative accounts.
 
-   Implement account lockout mechanisms: Temporarily block access after multiple failed login attempts.
+ - Implement account lockout mechanisms: Temporarily block access after multiple failed login attempts.
 
-   Use multi-factor authentication (MFA): Add an extra layer of security to administrative logins.
+ - Use multi-factor authentication (MFA): Add an extra layer of security to administrative logins.
 
-   Monitor login activity: Set alerts for unusual login patterns or repeated failed attempts.
+ - Monitor login activity: Set alerts for unusual login patterns or repeated failed attempts.
 
-   Conduct regular security audits: Review access controls and update software to patch known vulnerabilities.
+ - Conduct regular security audits: Review access controls and update software to patch known vulnerabilities.
 
-   It is strongly recommended to change all administrative passwords immediately when an employee with privileged access is terminated or leaves the organization. Failure to do so may result in unauthorized access, data compromise, or reputational damage.
+ - It is strongly recommended to change all administrative passwords immediately when an employee with privileged access is terminated or leaves the organization. Failure to do so may result in unauthorized access, data compromise, or reputational damage.
 
 
  
