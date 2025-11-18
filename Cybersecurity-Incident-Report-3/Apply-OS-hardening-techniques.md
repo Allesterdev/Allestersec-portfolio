@@ -36,3 +36,50 @@ Your job is to document the incident in detail, including identifying the networ
 
 ## Security incident report
 
+### Section 1: Identify the network protocol involved in the incident
+
+The following network protocols were involved:
+
+   DNS (Domain Name System): Used to resolve domain names to IP addresses during redirection.
+
+   HTTP (Hypertext Transfer Protocol): Used to deliver the compromised web page and initiate the malware download.
+
+   TCP/IP: Underlying transport protocol used for all communications between browser and server.
+
+### Section 2: Document the incident
+
+Several hours after the compromise, customers reported that the website encouraged them to download a file in exchange for free recipes. Upon execution, their browsers were redirected to a different domain, and their computers began to slow down.
+
+The attacker changed the admin password to prevent recovery and maintain control. The malicious script embedded in the site redirected users from yummyrecipesforme.com to greatrecipesforme.com, a fake site hosting malware.
+
+Captured network traffic revealed the following sequence:
+
+ 1. DNS request for yummyrecipesforme.com → DNS response with correct IP
+
+ 2. HTTP request to the site → download prompt for executable file
+
+ 3. DNS request for recetasriquitasforme.com → DNS response pointing to greatrecipesforme.com
+
+ 4. HTTP request to greatrecipesforme.com → malware delivered
+
+This confirms that the attacker used DNS manipulation and JavaScript injection to redirect users and deliver malicious payloads.
+
+### Section 3: Recommend one remediation for brute force attacks
+
+To prevent future brute-force attacks, the following security measures are recommended:
+
+   Enforce strong password policies: Disable default credentials and require complex passwords for all administrative accounts.
+
+   Implement account lockout mechanisms: Temporarily block access after multiple failed login attempts.
+
+   Use multi-factor authentication (MFA): Add an extra layer of security to administrative logins.
+
+   Monitor login activity: Set alerts for unusual login patterns or repeated failed attempts.
+
+   Conduct regular security audits: Review access controls and update software to patch known vulnerabilities.
+
+   It is strongly recommended to change all administrative passwords immediately when an employee with privileged access is terminated or leaves the organization. Failure to do so may result in unauthorized access, data compromise, or reputational damage.
+
+
+ 
+ 
