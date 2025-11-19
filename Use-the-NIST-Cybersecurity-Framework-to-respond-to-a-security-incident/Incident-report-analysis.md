@@ -50,6 +50,6 @@ Network monitoring software has been implemented to identify abnormal traffic pa
 The incident response team blocked incoming ICMP packets to stop the traffic flood. Non-critical network services were suspended, while critical services were restored to maintain operational continuity. The attack was then analyzed and all actions were documented, with the goal of improving response procedures for similar future incidents.
 
 ### Recover:
-After containing the attack, the internal network was restored to normal operation and critical services were secured. Improvement measures, such as new firewall rules and monitoring systems, were implemented to strengthen resilience and reduce the impact of potential future attacks. The incident results were also communicated to company management to ensure transparency and organizational preparedness.
+After containing the attack, the internal network was restored to normal operation and critical services were secured. Improvement measures, such as new firewall rules and monitoring systems, were implemented to strengthen resilience and reduce the impact of potential future attacks. The incident results were also communicated to company management to ensure transparency and organizational preparedness. The actions documented in this report will serve as a reference to respond more quickly and effectively to future cybersecurity incidents.
 
 
