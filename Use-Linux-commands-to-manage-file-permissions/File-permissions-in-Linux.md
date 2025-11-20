@@ -16,9 +16,10 @@ As a member of the investigation team, I am responsible for ensuring that all fi
 The image demonstrates that executing the ```ls -la``` command lists all files, including hidden entries, together with their associated permissions. Hidden files are denoted by a leading dot (e.g., ``.project_x.txt``). Additionally, a directory named drafts is present. The initial ten characters of each file entry indicate the file’s permission settings.
 
 ### Describe the permissions string
-
+In Linux, each file or directory is represented by a 10-character string that indicates its type and permissions. The first character specifies the file type, where `-` denotes a regular file, `d` a directory, and `l` a symbolic link. The following nine characters are grouped into three sets of three, representing permissions for the owner, the group, and others. Within each set, `r` stands for read, `w` for write, and `x` for execute, while a dash (`-`) indicates that the permission is not granted. For example, the string `-rwxr-xr--` describes a regular file where the owner has full read, write, and execute permissions, the group can read and execute but not write, and others can only read.
 
 ### Change file permissions
+
 
 ### Change file permissions on a hidden file
 
