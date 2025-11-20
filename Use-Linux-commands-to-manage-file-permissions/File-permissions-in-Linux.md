@@ -19,7 +19,13 @@ The image demonstrates that executing the ```ls -la``` command lists all files, 
 In Linux, each file or directory is represented by a 10-character string that indicates its type and permissions. The first character specifies the file type, where `-` denotes a regular file, `d` a directory, and `l` a symbolic link. The following nine characters are grouped into three sets of three, representing permissions for the owner, the group, and others. Within each set, `r` stands for read, `w` for write, and `x` for execute, while a dash (`-`) indicates that the permission is not granted. For example, the string `-rwxr-xr--` describes a regular file where the owner has full read, write, and execute permissions, the group can read and execute but not write, and others can only read.
 
 ### Change file permissions
+The organization instructed me to modify the permissions of the file `project_k.txt` to ensure that "others" (users who are neither the owner nor part of the group) do not have write access.
+To accomplish this, I used the following command:
 
+```bash
+chmod o-w project_k.txt
+
+![imagen](../image/permisos2.png)
 
 ### Change file permissions on a hidden file
 
