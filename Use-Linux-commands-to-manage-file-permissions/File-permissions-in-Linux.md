@@ -8,3 +8,19 @@ Your task is to examine existing permissions on the file system. You’ll need t
 ## File permissions in Linux
 
 ### Project description
+As a member of the investigation team, I am responsible for ensuring that all files adhere to the company’s least privilege policy. During the review, I identified several files requiring permission adjustments to bring them into compliance with organizational security standards.
+
+### Check file and directory details
+![imagen](../image/permisos.png)
+The image demonstrates that executing the ls -la command lists all files, including hidden entries, together with their associated permissions. Hidden files are denoted by a leading dot (e.g., .project_x.txt). Additionally, a directory named drafts is present. The initial ten characters of each file entry indicate the file’s permission settings.
+
+### Describe the permissions string
+
+
+### Change file permissions
+
+### Change file permissions on a hidden file
+
+### Change directory permissions
+
+### Summary
