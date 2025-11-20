@@ -20,15 +20,21 @@ In Linux, each file or directory is represented by a 10-character string that in
 
 ### Change file permissions
 The organization instructed me to modify the permissions of the file `project_k.txt` to ensure that "others" (users who are neither the owner nor part of the group) do not have write access.
-To accomplish this, I used the following command:
-
-```bash
-chmod o-w project_k.txt
+To accomplish this, I used the following command:```chmod o-w project_k.txt```
 
 ![imagen](../image/permisos2.png)
 
 ### Change file permissions on a hidden file
+It was also necessary to modify the permissions of the hidden file `.project_x.txt` to ensure that neither the owner nor the group could write to it, while allowing the group to retain read access.
+The following command was used:```chmod u-w,g-w,g+r .project_x.txt``` 
+
+![imagen](../image/permisos3.png)
 
 ### Change directory permissions
+The organization also requested that the user be the only entity with full privileges over the `drafts` directory. To comply with this requirement, I executed the following command:```chmod g-x drafts``` This command removes execute permissions from the group, effectively preventing group members from accessing the contents of the directory. As a result, only the owner retains full control, aligning with the organization's access control policy.
+
+![imagen](../image/permisos4.png)
 
 ### Summary
+During this exercise, file and directory permissions were adjusted to comply with the organization’s least privilege policy. Specific changes ensured that unauthorized users could not write to certain files, hidden files were restricted to read-only access for groups, and directory privileges were limited so that only the owner retained full control. These actions demonstrate the effective use of Linux permission management to strengthen security and enforce organizational standards.
+
