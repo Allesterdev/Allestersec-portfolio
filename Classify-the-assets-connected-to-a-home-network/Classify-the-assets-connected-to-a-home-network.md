@@ -23,3 +23,51 @@ Then, you’ll list important characteristics of each device such as its owner, 
 ---
 
 ![Home asset inventory](../image/HAI.png)
+
+# Creating Markdown file for Security Assessment Report
+
+import os
+
+# Define the markdown content
+markdown_content = """# Security Assessment – Asset Defense Overview
+
+## Context
+Evaluation of connected assets in a home environment, aiming to identify risks, classify sensitivity, and apply proportional defensive measures. The focus is on protecting confidentiality, integrity, and availability (CIA) of each asset.
+
+## Main Table
+| Asset                | Network Access     | Sensitivity     | Primary Risk                          | Key Defensive Recommendation                  |
+|----------------------|--------------------|------------------|----------------------------------------|------------------------------------------------|
+| Network router       | Continuous         | Confidential     | Direct exposure to Internet            | Change default credentials, disable WPS, update firmware |
+| Desktop              | Occasional         | Restricted       | Personal data theft, malware           | Updated antivirus, disk encryption, regular backups |
+| Guest smartphone     | Occasional         | Internal-only    | Uncontrolled access to local network   | Separate guest network, no access to internal devices |
+| Webcam               | Continuous         | Internal-only    | Espionage, unauthorized remote access  | Disable when unused, physical cover, review permissions |
+| Printer              | Occasional         | Internal-only    | Wi-Fi exposure, remote access          | Change admin password, disable unused services |
+| External hard drive  | None               | Confidential     | Indirect access if Desktop is compromised | Data encryption, disconnect when not in use |
+
+## Sensitivity Classification
+- **Confidential** → Specific users only. Requires encryption, access control, and monitoring.
+- **Restricted** → Need-to-know basis. Requires strong authentication and segmentation.
+- **Internal-only** → On-premises users. Requires network isolation and physical control.
+
+## General Recommendations
+1. **Network segmentation**: Create a separate guest network for untrusted devices (guest smartphones, IoT).
+2. **Physical access control**: Ensure sensitive devices (webcam, external drive) are physically protected and disconnected when not in use.
+3. **Encryption and backups**: Apply encryption to hard drives and perform regular offline backups.
+4. **Updates and patching**: Keep all devices updated, especially router, Desktop, and printer.
+5. **Monitoring and alerts**: Enable activity logs on router and Desktop to detect unauthorized access.
+
+## Strategic Observations
+- The Desktop acts as an indirect access hub for multiple assets. Its protection is a priority.
+- The external hard drive, while not networked, inherits risks from the Desktop.
+- Webcam and printer, connected via Wi-Fi, should be treated as semi-exposed assets.
+- The router, as the network entry point, must be hardened.
+
+**End of report.**
+"""
+
+# Save to markdown file
+output_path = "/mnt/data/security_assessment_report.md"
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write(markdown_content)
+
+print("Markdown report saved as 'security_assessment_report.md'")
