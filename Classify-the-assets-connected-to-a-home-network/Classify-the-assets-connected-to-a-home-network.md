@@ -24,13 +24,6 @@ Then, you’ll list important characteristics of each device such as its owner, 
 
 ![Home asset inventory](../image/HAI.png)
 
-# Creating Markdown file for Security Assessment Report
-
-import os
-
-# Define the markdown content
-markdown_content = """# Security Assessment – Asset Defense Overview
-
 ## Context
 Evaluation of connected assets in a home environment, aiming to identify risks, classify sensitivity, and apply proportional defensive measures. The focus is on protecting confidentiality, integrity, and availability (CIA) of each asset.
 
@@ -62,12 +55,3 @@ Evaluation of connected assets in a home environment, aiming to identify risks, 
 - Webcam and printer, connected via Wi-Fi, should be treated as semi-exposed assets.
 - The router, as the network entry point, must be hardened.
 
-**End of report.**
-"""
-
-# Save to markdown file
-output_path = "/mnt/data/security_assessment_report.md"
-with open(output_path, "w", encoding="utf-8") as f:
-    f.write(markdown_content)
-
-print("Markdown report saved as 'security_assessment_report.md'")
