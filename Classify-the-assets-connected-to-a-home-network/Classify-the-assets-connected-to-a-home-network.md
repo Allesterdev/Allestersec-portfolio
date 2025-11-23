@@ -33,7 +33,7 @@ Evaluation of connected assets in a home environment, aiming to identify risks, 
 | Network router       | Continuous         | Confidential     | Direct exposure to Internet            | Change default credentials, disable WPS, update firmware |
 | Desktop              | Occasional         | Restricted       | Personal data theft, malware           | Updated antivirus, disk encryption, regular backups |
 | Guest smartphone     | Occasional         | Internal-only    | Uncontrolled access to local network   | Separate guest network, no access to internal devices |
-| Webcam               | Continuous         | Internal-only    | Espionage, unauthorized remote access  | Disable when unused, physical cover, review permissions |
+| Webcam               | Occasional         | Internal-only    | Espionage, unauthorized remote access  | Disable when unused, physical cover, review permissions |
 | Printer              | Occasional         | Internal-only    | Wi-Fi exposure, remote access          | Change admin password, disable unused services |
 | External hard drive  | None               | Confidential     | Indirect access if Desktop is compromised | Data encryption, disconnect when not in use |
 
