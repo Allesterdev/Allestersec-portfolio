@@ -22,4 +22,4 @@ Then, you’ll list important characteristics of each device such as its owner, 
 
 ---
 
-
+[pdf](../docs/HAI.pdf)
