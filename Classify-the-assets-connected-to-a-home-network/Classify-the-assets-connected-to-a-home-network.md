@@ -6,20 +6,20 @@ You’re operating a small business from your home and must create an inventory 
 
 To do this, you will start by identifying three devices that have access to your home network. This might include devices such as:
 
-  -Desktop or laptop computers
+  - Desktop or laptop computers
 
-  -Smartphones
+  - Smartphones
 
-  -Smart home devices
+  - Smart home devices
 
-  -Game consoles
+  - Game consoles
 
-  -Storage devices or servers
+  - Storage devices or servers
 
-  -Video streaming devices
+  - Video streaming devices
 
 Then, you’ll list important characteristics of each device such as its owner, location, and type. Finally, you will assign each device a level of sensitivity based on how important it is to protect.
 
 ---
 
-[pdf](../docs/HAI.pdf)
+![Home asset inventory](../image/HAI.png)
