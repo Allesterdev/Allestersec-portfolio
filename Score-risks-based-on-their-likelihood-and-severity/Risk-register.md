@@ -20,3 +20,4 @@ The bank is located in a coastal area with low crime rates. Many people and syst
 **Severity**: Score from 1-3 of the potential damage the threat would cause to the business. A 1 means a low severity impact, a 2 is a moderate severity impact, and a 3 is a high severity impact.
 **Priority**: How quickly a risk should be addressed to avoid the potential incident. Use the following formula to calculate the overall score: Likelihood x Impact Severity = Risk
 
+![imagen2](../image/RM2.png)
