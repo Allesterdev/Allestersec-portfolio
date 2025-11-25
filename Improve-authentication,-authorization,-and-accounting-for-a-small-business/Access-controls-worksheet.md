@@ -8,15 +8,25 @@ To do this, you’ll need to do some accounting on the incident to better unders
 
 ### Accounting exercise
 Event Type: Information
+
 Event Source: AdsmEmployeeService
+
 Event Category: None
+
 Event ID: 1227
+
 Date: 10/03/2023
+
 Time: 8:29:57 AM
+
 User: Legal\Administrator
+
 Computer: Up2-NoGud
+
 IP: 152.207.255.255
+
 Description:
+
 Payroll event added. FAUX_BANK
 
 ---
