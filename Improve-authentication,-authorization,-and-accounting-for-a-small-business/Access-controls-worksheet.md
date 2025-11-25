@@ -7,26 +7,16 @@ Recently, a deposit was made from the business to an unknown bank account. The f
 To do this, you’ll need to do some accounting on the incident to better understand what happened. First, you will review the access log of the incident. Next, you will take notes that can help you identify a possible threat actor. Then, you will spot issues with the access controls that were exploited by the user. Finally, you will recommend mitigations that can improve the business' access controls and reduce the likelihood that this incident reoccurs.
 
 ### Accounting exercise
-Event Type: Information
-
-Event Source: AdsmEmployeeService
-
+Event Type: Information\n
+Event Source: AdsmEmployeeService\n
 Event Category: None
-
 Event ID: 1227
-
 Date: 10/03/2023
-
 Time: 8:29:57 AM
-
 User: Legal\Administrator
-
 Computer: Up2-NoGud
-
 IP: 152.207.255.255
-
 Description:
-
 Payroll event added. FAUX_BANK
 
 ---
