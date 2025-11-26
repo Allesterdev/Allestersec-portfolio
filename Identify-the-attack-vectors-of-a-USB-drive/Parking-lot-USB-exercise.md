@@ -35,13 +35,11 @@ The USB contains personal folders such as family photos, pictures of the dog, va
 
 ### Risk analysis
 
-#### Potential Malware Types
-- Keyloggers
-- Remote Access Trojans (RATs)
-- Ransomware
-- Data exfiltration tools
-- Worms or self-replicating payloads
+To reduce the risk of USB bait attacks, organizations should implement a combination of technical, operational, and management controls:
 
-#### Sensitive Information Found
-- Personal folders: family photos, pet images, vacation plans, wedding documents
-- Work-related files: employee budget, hospital agenda, résumé, internal letters
+- **Technical controls**: Disable USB ports on workstations, enforce endpoint protection policies, and use device control software to monitor and restrict USB access.
+- **Operational controls**: Train employees to avoid connecting unknown devices, establish clear reporting procedures for suspicious USBs, and conduct regular awareness campaigns.
+- **Management controls**: Define and enforce data handling policies, maintain an incident response plan for physical device threats, and audit compliance with USB usage restrictions.
+
+These measures help prevent unauthorized access, reduce human error, and strengthen the organization’s resilience against physical attack vectors.
+
