@@ -30,8 +30,43 @@ Justification: "We prioritize SQL to manage the sneaker inventory and user data,
 
 ## Decompose application
 
-graph LR
-    User[User] -- "Product search" --> Process(Process: Searching for sneakers for sale)
-    Process -- "Query Inventory" --> DB[(Database)]
-    DB -- "Listings of current inventory" --> Process
-    Process -- "Display Results" --> User
+![imagen](../image/diagrama.png)
+
+Data Flow Description: "The provided Data Flow Diagram (DFD) illustrates the Product Search process. A User initiates a search query for sneakers. This request is handled by the application process, which queries the central Database. The database then returns the listings of current inventory back to the user interface."
+
+## Threat analysis
+
+List 2 types of threats: SQL Injection, Session Hijacking
+
+What are the internal threats? "Internal threats typically include disgruntled employees, former staff with active access, or accidental data leaks by current employees."
+
+What are the external threats? "External threats include malicious attackers attempting to exploit the application through vectors like SQL Injection to steal data or Session Hijacking  to take over user accounts."
+
+## Vulnerability analysis
+
+List 2 vulnerabilities: Lack of prepared statements, Weak login credentials.
+
+Could there be things wrong with the codebase? "Yes, the codebase lacks prepared statements. Writing raw SQL queries without input sanitization creates a vulnerability that allows attackers to execute malicious SQL commands."
+
+Could there be weaknesses in the database? "Yes, the database may accept weak login credentials  or fail to enforce strong password policies, making user accounts susceptible to brute-force attacks and unauthorized access."
+
+Could there be flaws in the network? "Yes, if the application transmits these weak credentials or session tokens over unencrypted channels (HTTP instead of HTTPS), it exposes the network to sniffing and session hijacking attacks."
+
+## Attack modeling
+
+![imagen](../image/arbol.png)
+
+Description: "The attack tree visualizes the path to compromising User Data. One branch exploits SQL injection caused by a lack of prepared statements , while the second branch attempts Session hijacking by exploiting weak login credentials."
+
+## Risk analysis and impact
+
+List 4 security controls:
+
+
+ 1. Prepared Statements: Implement parameterized queries in the code to ensure that user input is treated strictly as data, effectively neutralizing SQL Injection attacks.
+
+ 2. Hashing (SHA-256): Store user passwords using strong hashing algorithms (SHA-256) rather than plain text. This mitigates the impact if the database is compromised.
+
+ 3. Input Validation: Sanitize and validate all user inputs on the API level to prevent malicious scripts or malformed data from processing.
+
+ 4. Encryption (AES & TLS): Use AES to encrypt sensitive payment data (credit cards) at rest and enforce HTTPS/TLS for all data in transit to prevent Session Hijacking.
