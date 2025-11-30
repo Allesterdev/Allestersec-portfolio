@@ -13,7 +13,7 @@ Once the attackers gained access, they deployed their ransomware, which encrypte
 ## Incident handler's journal
 
 ### Entry: 1
-### Date: 2025-11-30
+### Date: 11-30-2025
 ### Description: 
 On a Tuesday morning at approximately 09:00 AM, the clinic experienced a critical security incident resulting in a complete operational shutdown. Staff reported an inability to access workstations and essential files, including patient medical records. Ransom notes displayed on screens indicated that data had been encrypted by an organized threat group targeting the healthcare sector, demanding payment for decryption. The breach originated from targeted phishing emails containing malicious attachments that installed malware upon download. In response, the organization was forced to power down computer systems and contact external agencies for technical assistance and incident reporting.
 ### Tool(s) used: 
