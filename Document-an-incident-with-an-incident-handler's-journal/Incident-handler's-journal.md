@@ -27,6 +27,6 @@ Information not provided.
 
  - Where did the incident occur? At a small healthcare clinic located in the United States.
 
- - Why did the incident occur? The incident occurred because a staff member fell victim to a social engineering attack via a targeted phishing email containing a malicious attachment.ç
+ - Why did the incident occur? The incident occurred because a staff member fell victim to a social engineering attack via a targeted phishing email containing a malicious attachment.
 ### Additional notes:
 The root cause was a successful social engineering attack, highlighting the need for mandatory Security Awareness Training for all staff. Furthermore, an immediate audit of backup systems is required to ensure patient data can be restored without engaging with the threat actors.
