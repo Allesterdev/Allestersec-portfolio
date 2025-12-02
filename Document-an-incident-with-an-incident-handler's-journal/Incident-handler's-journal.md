@@ -1,14 +1,3 @@
-# Scenario
-
-A small U.S. health care clinic specializing in delivering primary-care services experienced a security incident on a Tuesday morning, at approximately 9:00 a.m. Several employees reported that they were unable to use their computers to access files like medical records. Business operations shut down because employees were unable to access the files and software needed to do their job.
-
-Additionally, employees also reported that a ransom note was displayed on their computers. The ransom note stated that all the company's files were encrypted by an organized group of unethical hackers who are known to target organizations in healthcare and transportation industries. In exchange for restoring access to the encrypted files, the ransom note demanded a large sum of money in exchange for the decryption key. 
-
-The attackers were able to gain access into the company's network by using targeted phishing emails, which were sent to several employees of the company. The phishing emails contained a malicious attachment that installed malware on the employee's computer once it was downloaded.
-
-Once the attackers gained access, they deployed their ransomware, which encrypted critical files. The company was unable to access critical patient data, causing major disruptions in their business operations. The company was forced to shut down their computer systems and contact several organizations to report the incident and receive technical assistance.
-
----
 
 ## Incident handler's journal
 
@@ -30,3 +19,27 @@ Information not provided.
  - Why did the incident occur? The incident occurred because a staff member fell victim to a social engineering attack via a targeted phishing email containing a malicious attachment.
 ### Additional notes:
 The root cause was a successful social engineering attack, highlighting the need for mandatory Security Awareness Training for all staff. Furthermore, an immediate audit of backup systems is required to ensure patient data can be restored without engaging with the threat actors.
+
+---
+
+Entry: 2
+
+Date: 07-20-2022
+
+Description: The SOC received an alert regarding a suspicious file download on an HR workstation. Investigation confirmed a successful spearphishing attack. An employee received an email with the subject "Re: Infrastructure Egnieer role" from an external sender using a high-risk TLD (.su). The email contained a password-protected archive (password provided in the body) to evade email gateway scanning. The user manually downloaded and executed the attachment bfsvc.exe, which corresponds to the Flagpro malware family. The malware successfully executed and attempted to establish communication with external Command and Control (C2) infrastructure at org.misecure.com.
+
+Tool(s) used: VirusTotal (Intelligence enrichment), SIEM (Alerting), Email Gateway Logs (Evidence retrieval).
+
+The 5 Ws of the Incident:
+
+ - Who caused the incident? The APT group BlackTech, known for using the Flagpro malware family.
+
+ - What happened? A targeted spearphishing attack delivered a malicious downloader via a password-protected zip file, leading to the execution of bfsvc.exe.
+
+ - When did the incident occur? On Wednesday, July 20, 2022, at 09:30:14 AM.
+
+ - Where did the incident occur? On an endpoint belonging to the HR department (hr@inergy.com) within the corporate network.
+
+ - Why did the incident occur? The incident occurred because the threat actor used defense evasion techniques (password-protected attachment) to bypass automated security controls, and the user failed to identify social engineering indicators (suspicious sender domain .su and  unsolicited attachment).
+
+Additional notes: The primary failure point was the human element combined with the inability of the Email Gateway to inspect encrypted archives. Immediate action is required to block the C2 domain org.misecure.com and the IP 87.248.202.1 at the perimeter firewall. The infected host must be isolated and reimaged. Recommend updating email policies to flag or quarantine password-protected attachments from external sources.
