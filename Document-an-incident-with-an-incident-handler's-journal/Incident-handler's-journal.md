@@ -24,7 +24,8 @@ The root cause was a successful social engineering attack, highlighting the need
 
 ### Entry: 2
 ### Date: 07-20-2022
-### Description: The SOC received an alert regarding a suspicious file download on an HR workstation. Investigation confirmed a successful spearphishing attack. An employee received an email with the subject "Re: Infrastructure Egnieer role" from an external sender using a high-risk TLD (.su). The email contained a password-protected archive (password provided in the body) to evade email gateway scanning. The user manually downloaded and executed the attachment bfsvc.exe, which corresponds to the Flagpro malware family. The malware successfully executed and attempted to establish communication with external Command and Control (C2) infrastructure at org.misecure.com.
+### Description: 
+The SOC received an alert regarding a suspicious file download on an HR workstation. Investigation confirmed a successful spearphishing attack. An employee received an email with the subject "Re: Infrastructure Egnieer role" from an external sender using a high-risk TLD (.su). The email contained a password-protected archive (password provided in the body) to evade email gateway scanning. The user manually downloaded and executed the attachment bfsvc.exe, which corresponds to the Flagpro malware family. The malware successfully executed and attempted to establish communication with external Command and Control (C2) infrastructure at org.misecure.com.
 ### Tool(s) used: 
 VirusTotal (Intelligence enrichment), SIEM (Alerting), Email Gateway Logs (Evidence retrieval).
 ### The 5 Ws of the Incident:
