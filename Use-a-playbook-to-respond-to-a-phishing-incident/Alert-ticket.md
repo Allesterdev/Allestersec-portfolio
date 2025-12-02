@@ -8,4 +8,6 @@ In the playbook, there is a flowchart and written instructions to help you compl
 
 ---
 
-![imagen](../image/AT.png)
+![imagen](../image/TA.png)
+![imagen](../image/TA2.png)
+
