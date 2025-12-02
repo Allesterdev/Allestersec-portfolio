@@ -1,5 +1,5 @@
 
-## Incident handler's journal
+# Incident handler's journal
 
 ### Entry: 1
 ### Date: 11-30-2025
@@ -22,16 +22,12 @@ The root cause was a successful social engineering attack, highlighting the need
 
 ---
 
-Entry: 2
-
-Date: 07-20-2022
-
-Description: The SOC received an alert regarding a suspicious file download on an HR workstation. Investigation confirmed a successful spearphishing attack. An employee received an email with the subject "Re: Infrastructure Egnieer role" from an external sender using a high-risk TLD (.su). The email contained a password-protected archive (password provided in the body) to evade email gateway scanning. The user manually downloaded and executed the attachment bfsvc.exe, which corresponds to the Flagpro malware family. The malware successfully executed and attempted to establish communication with external Command and Control (C2) infrastructure at org.misecure.com.
-
-Tool(s) used: VirusTotal (Intelligence enrichment), SIEM (Alerting), Email Gateway Logs (Evidence retrieval).
-
-The 5 Ws of the Incident:
-
+### Entry: 2
+### Date: 07-20-2022
+### Description: The SOC received an alert regarding a suspicious file download on an HR workstation. Investigation confirmed a successful spearphishing attack. An employee received an email with the subject "Re: Infrastructure Egnieer role" from an external sender using a high-risk TLD (.su). The email contained a password-protected archive (password provided in the body) to evade email gateway scanning. The user manually downloaded and executed the attachment bfsvc.exe, which corresponds to the Flagpro malware family. The malware successfully executed and attempted to establish communication with external Command and Control (C2) infrastructure at org.misecure.com.
+### Tool(s) used: 
+VirusTotal (Intelligence enrichment), SIEM (Alerting), Email Gateway Logs (Evidence retrieval).
+### The 5 Ws of the Incident:
  - Who caused the incident? The APT group BlackTech, known for using the Flagpro malware family.
 
  - What happened? A targeted spearphishing attack delivered a malicious downloader via a password-protected zip file, leading to the execution of bfsvc.exe.
@@ -42,4 +38,5 @@ The 5 Ws of the Incident:
 
  - Why did the incident occur? The incident occurred because the threat actor used defense evasion techniques (password-protected attachment) to bypass automated security controls, and the user failed to identify social engineering indicators (suspicious sender domain .su and  unsolicited attachment).
 
-Additional notes: The primary failure point was the human element combined with the inability of the Email Gateway to inspect encrypted archives. Immediate action is required to block the C2 domain org.misecure.com and the IP 87.248.202.1 at the perimeter firewall. The infected host must be isolated and reimaged. Recommend updating email policies to flag or quarantine password-protected attachments from external sources.
+### Additional notes: 
+The primary failure point was the human element combined with the inability of the Email Gateway to inspect encrypted archives. Immediate action is required to block the C2 domain org.misecure.com and the IP 87.248.202.1 at the perimeter firewall. The infected host must be isolated and reimaged. Recommend updating email policies to flag or quarantine password-protected attachments from external sources.
