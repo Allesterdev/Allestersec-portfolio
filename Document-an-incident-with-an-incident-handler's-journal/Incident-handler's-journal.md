@@ -41,3 +41,28 @@ VirusTotal (Intelligence enrichment), SIEM (Alerting), Email Gateway Logs (Evide
 
 ### Additional notes: 
 The primary failure point was the human element combined with the inability of the Email Gateway to inspect encrypted archives. Immediate action is required to block the C2 domain org.misecure.com and the IP 87.248.202.1 at the perimeter firewall. The infected host must be isolated and reimaged. Recommend updating email policies to flag or quarantine password-protected attachments from external sources.
+
+---
+
+### Entry: 3
+### Date: 04-12-2025
+### Description:
+Execution of network forensic analysis and traffic capture procedures within a controlled Linux environment. Active network interfaces were identified, followed by live packet capture using the tcpdump command-line tool. The objective was to intercept HTTP traffic (Port 80) synthetically generated via curl, store the data in a pcap file (capture.pcap), and perform Deep Packet Inspection (DPI) of headers and payloads in Hexadecimal and ASCII formats to identify communication patterns without alerting potential external actors (name resolution disabled).
+
+### Tool(s) used:
+tcpdump (Capture & Filtering), ifconfig (Interface Enumeration), curl (Traffic Generation), Linux CLI.
+
+### The 5 Ws of the Incident:
+
+ - Who performed the action? The Security Analyst (User analyst) during a training/audit session.
+
+ - What happened? Successfully captured 9 packets of TCP/IP traffic filtering by port 80, avoiding DNS name resolution to maintain operational discretion (-nn). Raw data from the .pcap file was subsequently analyzed using read filters.
+
+ - When did the incident occur? During the assigned maintenance/lab window for connectivity testing.
+
+ - Where did the incident occur? On the primary Ethernet interface (eth0) of the analyst's Linux workstation.
+
+ - Why did the incident occur? Proactive activity to validate network visibility capabilities and practice packet filtering syntax required for future malware or intrusion investigations.
+
+### Additional notes: 
+Confirmed the critical importance of the -nn flag in tcpdump as an Operational Security (OPSEC) measure to prevent reverse DNS lookups from alerting attackers during a live investigation. Hexadecimal analysis (-X) allowed for visualization of the packet payload, validating that the captured traffic corresponded to a standard HTTP request. The procedure is validated and ready for application in real-world incidents.
