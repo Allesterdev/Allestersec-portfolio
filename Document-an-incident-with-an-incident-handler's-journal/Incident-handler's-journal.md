@@ -66,3 +66,28 @@ tcpdump (Capture & Filtering), ifconfig (Interface Enumeration), curl (Traffic G
 
 ### Additional notes: 
 Confirmed the critical importance of the -nn flag in tcpdump as an Operational Security (OPSEC) measure to prevent reverse DNS lookups from alerting attackers during a live investigation. Hexadecimal analysis (-X) allowed for visualization of the packet payload, validating that the captured traffic corresponded to a standard HTTP request. The procedure is validated and ready for application in real-world incidents.
+
+---
+
+### Entry: 4
+### Date: 03-12-2025
+### Description:
+Conducted operational testing and configuration of the Suricata Intrusion Detection System (IDS). The objective was to validate signature-based detection capabilities by analyzing pre-recorded network traffic (sample.pcap). A custom detection rule was authored and deployed to flag specific HTTP traffic patterns. Post-execution analysis involved examining alert generation in legacy logs (fast.log) and parsing rich telemetry data within the standard JSON output (eve.json) using command-line JSON processors.
+
+### Tool(s) used:
+Suricata (IDS Engine), jq (JSON processing), Linux CLI, sample.pcap (Traffic Replay).
+
+### The 5 Ws of the Incident:
+
+ - Who performed the action? The Security Analyst (User analyst) within the local testing environment.
+
+ - What happened? Suricata was executed in offline mode (-r) to process a pcap file using a custom signature (SID: 12345). The engine successfully triggered alerts upon detecting HTTP "GET" methods egressing from the local network ($HOME_NET) to external destinations ($EXTERNAL_NET).
+
+ - When did the incident occur? During the designated signature development and testing window.
+
+ - Where did the incident occur? The Linux workstation, specifically processing data from /home/analyst and generating logs in /var/log/suricata.
+
+ - Why did the incident occur? To verify the logic of custom IDS rules and to practice correlating events using unique flow_id values in JSON logs for threat hunting purposes.
+
+### Additional notes:
+The custom rule was validated: alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"GET on wire"; flow:established,to_server; content:"GET"; http_method; sid:12345; rev:3;). It was observed that while fast.log provides a quick summary, it is deprecated for deep analysis. The eve.json file is the primary source for incident response, containing critical metadata (Flow IDs, timestamps, protocol details). The utility jq proved essential for filtering this verbose data to isolate specific conversation flows.
