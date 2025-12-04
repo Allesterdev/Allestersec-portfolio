@@ -45,7 +45,7 @@ The primary failure point was the human element combined with the inability of t
 ---
 
 ### Entry: 3
-### Date: 04-12-2025
+### Date: 03-12-2025
 ### Description:
 Execution of network forensic analysis and traffic capture procedures within a controlled Linux environment. Active network interfaces were identified, followed by live packet capture using the tcpdump command-line tool. The objective was to intercept HTTP traffic (Port 80) synthetically generated via curl, store the data in a pcap file (capture.pcap), and perform Deep Packet Inspection (DPI) of headers and payloads in Hexadecimal and ASCII formats to identify communication patterns without alerting potential external actors (name resolution disabled).
 
@@ -70,7 +70,7 @@ Confirmed the critical importance of the -nn flag in tcpdump as an Operational S
 ---
 
 ### Entry: 4
-### Date: 03-12-2025
+### Date: 04-12-2025
 ### Description:
 Conducted operational testing and configuration of the Suricata Intrusion Detection System (IDS). The objective was to validate signature-based detection capabilities by analyzing pre-recorded network traffic (sample.pcap). A custom detection rule was authored and deployed to flag specific HTTP traffic patterns. Post-execution analysis involved examining alert generation in legacy logs (fast.log) and parsing rich telemetry data within the standard JSON output (eve.json) using command-line JSON processors.
 
