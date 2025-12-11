@@ -39,7 +39,7 @@ Practical implementation of security concepts and automation scripts:
   * 🐚 **Bash Scripting**
 
 * **Operating Systems (Linux & Windows):**
-  * **Daily Driver:** OpenSUSE Tumbleweed (Rolling Release Management).
+  * **Daily Driver:** openSUSE Tumbleweed (Rolling Release Management).
   * **Security:** Kali Linux (Penetration Testing Tools).
   * **Servers:** Debian/Ubuntu, Fedora.
   * **Other:** Manjaro, Windows 10/11 (Power User).
