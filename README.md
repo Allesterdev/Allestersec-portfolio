@@ -16,11 +16,11 @@ Practical implementation of security concepts and automation scripts:
 
 | Project | Tech Stack | Description |
 | :--- | :--- | :--- |
-| **[Python Access Control](./Python-Access-Control-Automation)** | 🐍 Python | Automation script to manage Access Control Lists (ACLs) and update IP file permissions programmatically. |
-| **[Network Hardening Audit](./Network-Hardening-Audit)** | 🛡️ NIST/Security | Comprehensive network security audit and hardening recommendations based on security standards. |
-| **[SQL Security Analysis](./SQL-Security-Filters-Analysis)** | 🗄️ SQL | Vulnerability identification in databases and implementation of secure query filters. |
-| **[Linux Permissions](./Linux-Permissions-Management)** | 🐧 Linux | Advanced file permission and user management in Linux environments. |
-| **[Malware Investigation](./Malware-Hash-Investigation)** | 🕵️‍♂️ SOC | Suspicious file hash analysis for threat detection and incident response. |
+| **[Python Access Control](./Python-Access-Control-Automation/Algorithm-for-file-updates-in-Python.md)** | 🐍 Python | Automation script to manage Access Control Lists (ACLs) and update IP file permissions programmatically. |
+| **[Network Hardening Audit](./Network-Hardening-Audit/Security-risk-assessment-report.md)** | 🛡️ NIST/Security | Comprehensive network security audit and hardening recommendations based on security standards. |
+| **[SQL Security Analysis](./SQL-Security-Filters-Analysis/Apply-filters-to-SQL-queries.md)** | 🗄️ SQL | Vulnerability identification in databases and implementation of secure query filters. |
+| **[Linux Permissions](./Linux-Permissions-Management/File-permissions-in-Linux.md)** | 🐧 Linux | Advanced file permission and user management in Linux environments. |
+| **[Malware Investigation](./Malware-Hash-Investigation/Pyramid-of-Pain.md)** | 🕵️‍♂️ SOC | Suspicious file hash analysis for threat detection and incident response. |
 
 ---
 
