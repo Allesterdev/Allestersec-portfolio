@@ -1,5 +1,8 @@
 # 👨‍💻 Oscar Campoy | DevSecOps & Security Analyst
 
+> **📁 About this Repository**  
+> This is a professional cybersecurity portfolio showcasing practical security projects, automation scripts, and security analysis work. It demonstrates hands-on experience in DevSecOps, Python security automation, network hardening, SQL security, and Linux system administration.
+
 > "Automating security and hardening infrastructure, one script at a time."
 
 ### 🚀 Technical Profile
