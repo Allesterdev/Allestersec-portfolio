@@ -10,7 +10,17 @@
 
 ---
 
-### 📂 Selected Projects
+### 🚀 Flagship Projects (Real World DevSecOps)
+
+Full-scale automation and development projects featuring Docker, CI/CD, and security best practices:
+
+| Project | Tech Stack | Description |
+| :--- | :--- | :--- |
+| **[AutoSorter Pro](https://github.com/Allesterdev/autosorter_pro)** | 🐍 Python, 🐳 Docker, ⚙️ Makefile | Advanced automation tool for file organization featuring multi-stage Docker builds, secure environment configuration, and automated setup scripts. |
+
+---
+
+### 🧪 Google Cybersecurity Labs (Coursework)
 
 Practical implementation of security concepts and automation scripts:
 
