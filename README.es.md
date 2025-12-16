@@ -81,7 +81,7 @@ Implementación práctica de conceptos de seguridad y scripts de automatización
   * NIST Cybersecurity Framework.
   * Herramientas SIEM (Análisis de Logs).
   * Configuración de IDS/IPS.
-  * Protocolos de Defensa Alimentaria (Experiencia en Seguridad Industrial).
+  * Protocolos de Defensa de Alimentos (Experiencia en Seguridad Industrial).
 
 ---
 
