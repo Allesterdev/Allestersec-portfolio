@@ -1,6 +1,13 @@
-# 👨‍💻 Oscar Campoy | DevSecOps & Security Analyst
+<div align="right">
+  <a href="README.md" title="English">
+    <img src="https://img.shields.io/badge/English-blue?style=for-the-badge&logo=google-translate&logoColor=white" alt="English"/>
+  </a>
+  <a href="README.es.md" title="Español">
+    <img src="https://img.shields.io/badge/Espa%C3%B1ol-gray?style=for-the-badge&logo=google-translate&logoColor=white" alt="Español"/>
+  </a>
+</div>
 
-**Read this in other languages:** [Español (Spanish)](README.es.md)
+# 👨‍💻 Oscar Campoy | DevSecOps & Security Analyst
 
 > "Automating security and hardening infrastructure, one script at a time."
 
