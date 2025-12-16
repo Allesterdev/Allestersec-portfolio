@@ -1,8 +1,8 @@
-**🌐 Language:** [🇪🇸 Español](README.es.md) | **🇬🇧 English**
-
 # 👨‍💻 Oscar Campoy | DevSecOps & Security Analyst
 
 > "Automating security and hardening infrastructure, one script at a time."
+
+**🌐 Language:** [🇪🇸 Español](README.es.md) | **🇬🇧 English**
 
 ### 🚀 Technical Profile
 * **Role:** Junior DevSecOps / Security Analyst
