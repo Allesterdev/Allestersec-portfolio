@@ -4,6 +4,8 @@
 
 > "Automatizando la seguridad y fortificando infraestructuras, un script a la vez."
 
+**🌐 Idioma:** **🇪🇸 Español** | [🇬🇧 English](README.md)
+
 ### 🚀 Perfil Técnico
 * **Rol:** Junior DevSecOps / Analista de Seguridad
 * **Enfoque:** Scripting en Python, Automatización, Hardening en Linux, Seguridad SQL.
