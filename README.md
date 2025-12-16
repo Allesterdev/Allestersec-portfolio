@@ -21,6 +21,7 @@
 | ✅ **SAST:** Bandit, Android Lint<br>✅ **SCA:** OWASP Dep-Check, Safety<br>✅ **Secrets:** GitHub Encrypted Keys | 🚀 **CD:** Auto-Deploy to Google Play<br>🚦 **Gates:** Strict Blocking Rules<br>📝 **Release:** Automated Notes | 🐍 **Python:** Shared Logic (Chaquopy)<br>🏗️ **Kotlin:** Native UI/UX<br>🧪 **Quality:** 100% Critical Coverage |
 
 👇 **View the Security Pipeline & Source Code:**
+
 [![View Secure Repo](https://img.shields.io/badge/VIEW_SECURE_REPOSITORY-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=238636&color=black)](https://github.com/Allesterdev/BMI-Hybrid-Kotlin-Python)
 
 ---
