@@ -18,7 +18,7 @@
 **🛑 DESTACADO:** Una aplicación móvil de grado de producción que implementa una estricta estrategia de **Seguridad Shift-Left**.
 
 > **[BMI-Hybrid-Kotlin-Python](https://github.com/Allesterdev/BMI-Hybrid-Kotlin-Python)**
-> *Android Nativo (Kotlin) + Lógica Python + Pipeline CI/CD de Grado Militar*
+> *Android Nativo (Kotlin) + Lógica Python + Pipeline CI/CD de Grado Empresarial*
 
 | 🛡️ Stack de Seguridad | ⚙️ Automatización DevSecOps | 📱 Ingeniería Híbrida |
 | :--- | :--- | :--- |
