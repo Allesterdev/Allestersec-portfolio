@@ -70,7 +70,7 @@ Implementación práctica de conceptos de seguridad y scripts de automatización
   * **Uso Diario:** openSUSE Tumbleweed (Gestión de Rolling Release).
   * **Seguridad:** Kali Linux (Herramientas de Pentesting).
   * **Servidores:** Debian/Ubuntu, Fedora.
-  * **Otros:** Manjaro, Windows 10/11 (Power User).
+  * **Otros:** Manjaro, Windows 10/11 (Usuario Avanzado).
 
 * **Infraestructura & Hardware:**
   * ☁️ VirtualBox & Gestión de VMs.
@@ -81,7 +81,7 @@ Implementación práctica de conceptos de seguridad y scripts de automatización
   * NIST Cybersecurity Framework.
   * Herramientas SIEM (Análisis de Logs).
   * Configuración de IDS/IPS.
-  * Protocolos de Food Defense (Experiencia en Seguridad Industrial).
+  * Protocolos de Defensa Alimentaria (Experiencia en Seguridad Industrial).
 
 ---
 
