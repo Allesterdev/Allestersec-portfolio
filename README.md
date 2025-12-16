@@ -56,8 +56,9 @@ Practical implementation of security concepts and automation scripts:
 * **DevSecOps & CI/CD:**
   * 🐳 **Docker** (Containerization)
   * 🚀 **GitHub Actions** (CI/CD Pipelines)
-  * 🔒 **SAST Tools:** Bandit (Python Security Scanning)
-  * 📏 **Code Quality:** Ruff, MyPy
+  * 🔒 **SAST Tools:** Bandit, Android Lint
+  * 🔍 **SCA Tools:** OWASP Dependency Check, Safety
+  * 📏 **Code Quality:** Ruff, Black, Flake8, MyPy
   * 📱 **Google Play Console (Release Management)**
 
 * **Languages & Scripting:**
