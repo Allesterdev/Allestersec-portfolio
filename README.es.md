@@ -1,4 +1,4 @@
-# 👨‍💻 Oscar Campoy | DevSecOps & Analista de Seguridad
+# 👨‍💻 Oscar Campoy | Analista de Seguridad
 
 **Leer en otros idiomas:** [English (Inglés)](README.md)
 
@@ -7,26 +7,31 @@
 **🌐 Idioma:** **🇪🇸 Español** | [🇬🇧 English](README.md)
 
 ### 🚀 Perfil Técnico
-* **Rol:** Junior DevSecOps / Analista de Seguridad
-* **Enfoque:** Scripting en Python, Automatización, Hardening en Linux, Seguridad SQL.
+* **Rol:** Analista de Seguridad
+* **Enfoque:** Automatización de Detección de Amenazas, Automatización, Hardening en Linux, Hardening de Bases de Datos y Auditoría de Logs.
 * **Certificación:** Google Cybersecurity Professional.
 * **Ubicación:** España (Abierto a Remoto).
 
 ---
 
-## 🏆 PROYECTO ESTRELLA: Arquitectura Android Híbrida Segura
-**🛑 DESTACADO:** Una aplicación móvil de grado de producción que implementa una estricta estrategia de **Seguridad Shift-Left**.
+## 🏆 PROYECTO ESTRELLA: SentineLLM
 
-> **[BMI-Hybrid-Kotlin-Python](https://github.com/Allesterdev/BMI-Hybrid-Kotlin-Python)**
-> *Android Nativo (Kotlin) + Lógica Python + Pipeline CI/CD de Grado Empresarial*
+<!-- Placeholder de Imagen 1 -->
+<!-- Placeholder de Imagen 2 -->
 
-| 🛡️ Stack de Seguridad | ⚙️ Automatización DevSecOps | 📱 Ingeniería Híbrida |
+**🛑 DESTACADO:** Middleware de Seguridad para detección de amenazas en tiempo real. Previene fugas de datos (DLP) y bloquea Prompt Injections en LLMs. Arquitectura agnóstica validada con Google Gemini.
+
+> **<a href="https://github.com/Allesterdev/SentineLLM">Repositorio SentineLLM</a>**
+
+[![Ver SentineLLM](https://img.shields.io/badge/VER_REPOSITORIO_SENTINELLM-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=238636&color=black)](https://github.com/Allesterdev/SentineLLM)
+
+---
+
+### ⚙️ DevSecOps & Ingeniería
+
+| Proyecto | Stack Tecnológico | Descripción |
 | :--- | :--- | :--- |
-| ✅ **SAST:** Bandit, Android Lint<br>✅ **SCA:** OWASP Dep-Check, Safety<br>✅ **Secretos:** Claves Encriptadas de GitHub | 🚀 **CD:** Auto-Deploy a Google Play<br>🚦 **Puertas:** Reglas de Bloqueo Estrictas<br>📝 **Release:** Notas Automatizadas | 🐍 **Python:** Lógica Compartida (Chaquopy)<br>🏗️ **Kotlin:** UI/UX Nativa<br>🧪 **Calidad:** 100% Cobertura Crítica |
-
-👇 **Ver el Pipeline de Seguridad y Código Fuente:**
-
-[![Ver Repositorio Seguro](https://img.shields.io/badge/VER_REPOSITORIO_SEGURO-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=238636&color=black)](https://github.com/Allesterdev/BMI-Hybrid-Kotlin-Python)
+| **[BMI-Hybrid-Kotlin-Python](https://github.com/Allesterdev/BMI-Hybrid-Kotlin-Python)** | 📱 Kotlin, 🐍 Python, 🚀 CI/CD | Aplicación móvil híbrida Android de grado de producción que implementa una estricta estrategia de Seguridad Shift-Left con SAST, SCA y despliegue automatizado a Google Play. |
 
 ---
 
@@ -39,17 +44,17 @@
 ---
 
 
-### 🧪 Laboratorios de Ciberseguridad de Google (Trabajo de Curso)
+### 🚀 Operaciones de Seguridad y Laboratorios
 
 Implementación práctica de conceptos de seguridad y scripts de automatización:
 
 | Proyecto | Stack Tecnológico | Descripción |
 | :--- | :--- | :--- |
-| **[Control de Acceso en Python](./Python-Access-Control-Automation/Algorithm-for-file-updates-in-Python.md)** | 🐍 Python | Script de automatización para gestionar Listas de Control de Acceso (ACLs) y actualizar permisos de archivos de IP de forma programática. |
-| **[Auditoría de Hardening de Red](./Network-Hardening-Audit/Security-risk-assessment-report.md)** | 🛡️ NIST/Seguridad | Auditoría completa de seguridad de red y recomendaciones de hardening basadas en estándares de seguridad. |
+| **[IAM: Aplicación automatizada de políticas](./Python-Access-Control-Automation/Algorithm-for-file-updates-in-Python.md)** | 🐍 Python | Script de automatización para gestionar Listas de Control de Acceso (ACLs) y actualizar permisos de archivos de IP de forma programática. |
+| **[Defensa Perimetral: Auditoría de seguridad basada en NIST](./Network-Hardening-Audit/Security-risk-assessment-report.md)** | 🛡️ NIST/Seguridad | Auditoría completa de seguridad de red y recomendaciones de hardening basadas en estándares de seguridad. |
 | **[Análisis de Seguridad SQL](./SQL-Security-Filters-Analysis/Apply-filters-to-SQL-queries.md)** | 🗄️ SQL | Identificación de vulnerabilidades en bases de datos e implementación de filtros de consulta seguros. |
 | **[Permisos en Linux](./Linux-Permissions-Management/File-permissions-in-Linux.md)** | 🐧 Linux | Gestión avanzada de permisos de archivos y usuarios en entornos Linux. |
-| **[Investigación de Malware](./Malware-Hash-Investigation/Pyramid-of-Pain.md)** | 🕵️‍♂️ SOC | Análisis de hashes de archivos sospechosos para detección de amenazas y respuesta a incidentes. |
+| **[Respuesta a Incidentes: Análisis de hashes y detección de amenazas](./Malware-Hash-Investigation/Pyramid-of-Pain.md)** | 🕵️‍♂️ SOC | Análisis de hashes de archivos sospechosos para detección de amenazas y respuesta a incidentes. |
 
 ---
 

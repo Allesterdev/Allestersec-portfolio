@@ -1,30 +1,35 @@
-# 👨‍💻 Oscar Campoy | DevSecOps & Security Analyst
+# 👨‍💻 Oscar Campoy | Security Analyst
 
 > "Automating security and hardening infrastructure, one script at a time."
 
 **🌐 Language:** [🇪🇸 Español](README.es.md) | **🇬🇧 English**
 
 ### 🚀 Technical Profile
-* **Role:** Junior DevSecOps / Security Analyst
-* **Focus:** Python Scripting, Automation, Linux Hardening, SQL Security.
+* **Role:** Security Analyst
+* **Focus:** Threat Detection Automation, Automation, Linux Hardening, Database Hardening & Log Auditing.
 * **Certification:** Google Cybersecurity Professional.
 * **Location:** Spain (Open to Remote).
 
 ---
 
-## 🏆 STAR PROJECT: Secure Hybrid Android Architecture
-**🛑 FEATURED:** A production-grade mobile application implementing a strict **Shift-Left Security** strategy.
+## 🏆 STAR PROJECT: SentineLLM
 
-> **[BMI-Hybrid-Kotlin-Python](https://github.com/Allesterdev/BMI-Hybrid-Kotlin-Python)**
-> *Native Android (Kotlin) + Python Logic + Enterprise-Grade CI/CD Pipeline*
+<!-- Image Placeholder 1 -->
+<!-- Image Placeholder 2 -->
 
-| 🛡️ Security Stack | ⚙️ DevSecOps Automation | 📱 Hybrid Engineering |
+**🛑 FEATURED:** Security Middleware for real-time threat detection. Prevents data leaks (DLP) and blocks Prompt Injections in LLMs. Agnostic architecture validated with Google Gemini.
+
+> **<a href="https://github.com/Allesterdev/SentineLLM">SentineLLM Repository</a>**
+
+[![View SentineLLM](https://img.shields.io/badge/VIEW_SENTINELLM_REPOSITORY-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=238636&color=black)](https://github.com/Allesterdev/SentineLLM)
+
+---
+
+### ⚙️ DevSecOps & Engineering
+
+| Project | Tech Stack | Description |
 | :--- | :--- | :--- |
-| ✅ **SAST:** Bandit, Android Lint<br>✅ **SCA:** OWASP Dep-Check, Safety<br>✅ **Secrets:** GitHub Encrypted Keys | 🚀 **CD:** Auto-Deploy to Google Play<br>🚦 **Gates:** Strict Blocking Rules<br>📝 **Release:** Automated Notes | 🐍 **Python:** Shared Logic (Chaquopy)<br>🏗️ **Kotlin:** Native UI/UX<br>🧪 **Quality:** 100% Critical Coverage |
-
-👇 **View the Security Pipeline & Source Code:**
-
-[![View Secure Repo](https://img.shields.io/badge/VIEW_SECURE_REPOSITORY-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=238636&color=black)](https://github.com/Allesterdev/BMI-Hybrid-Kotlin-Python)
+| **[BMI-Hybrid-Kotlin-Python](https://github.com/Allesterdev/BMI-Hybrid-Kotlin-Python)** | 📱 Kotlin, 🐍 Python, 🚀 CI/CD | Production-grade hybrid Android application implementing a strict Shift-Left Security strategy with SAST, SCA, and automated deployment to Google Play. |
 
 ---
 
@@ -37,17 +42,17 @@
 ---
 
 
-### 🧪 Google Cybersecurity Labs (Coursework)
+### 🚀 Security Operations & Labs
 
 Practical implementation of security concepts and automation scripts:
 
 | Project | Tech Stack | Description |
 | :--- | :--- | :--- |
-| **[Python Access Control](./Python-Access-Control-Automation/Algorithm-for-file-updates-in-Python.md)** | 🐍 Python | Automation script to manage Access Control Lists (ACLs) and update IP file permissions programmatically. |
-| **[Network Hardening Audit](./Network-Hardening-Audit/Security-risk-assessment-report.md)** | 🛡️ NIST/Security | Comprehensive network security audit and hardening recommendations based on security standards. |
+| **[IAM: Automated policy enforcement](./Python-Access-Control-Automation/Algorithm-for-file-updates-in-Python.md)** | 🐍 Python | Automation script to manage Access Control Lists (ACLs) and update IP file permissions programmatically. |
+| **[Perimeter Defense: NIST-based security auditing](./Network-Hardening-Audit/Security-risk-assessment-report.md)** | 🛡️ NIST/Security | Comprehensive network security audit and hardening recommendations based on security standards. |
 | **[SQL Security Analysis](./SQL-Security-Filters-Analysis/Apply-filters-to-SQL-queries.md)** | 🗄️ SQL | Vulnerability identification in databases and implementation of secure query filters. |
 | **[Linux Permissions](./Linux-Permissions-Management/File-permissions-in-Linux.md)** | 🐧 Linux | Advanced file permission and user management in Linux environments. |
-| **[Malware Investigation](./Malware-Hash-Investigation/Pyramid-of-Pain.md)** | 🕵️‍♂️ SOC | Suspicious file hash analysis for threat detection and incident response. |
+| **[Incident Response: Hash analysis and threat detection](./Malware-Hash-Investigation/Pyramid-of-Pain.md)** | 🕵️‍♂️ SOC | Suspicious file hash analysis for threat detection and incident response. |
 
 ---
 
