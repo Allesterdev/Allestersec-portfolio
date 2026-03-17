@@ -21,8 +21,6 @@
 
 > **<a href="https://github.com/Allesterdev/SentineLLM">SentineLLM Repository</a>**
 
-[![View SentineLLM](https://img.shields.io/badge/VIEW_SENTINELLM_REPOSITORY-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=238636&color=black)](https://github.com/Allesterdev/SentineLLM)
-
 ---
 
 ### ⚙️ DevSecOps & Engineering
