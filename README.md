@@ -6,7 +6,7 @@
 
 ### 🚀 Technical Profile
 * **Role:** Security Analyst
-* **Focus:** Threat Detection Automation, Automation, Linux Hardening, Database Hardening & Log Auditing.
+* **Focus:** Threat Detection Automation, Linux Hardening, Database Hardening & Log Auditing.
 * **Certification:** Google Cybersecurity Professional.
 * **Location:** Spain (Open to Remote).
 

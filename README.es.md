@@ -8,7 +8,7 @@
 
 ### 🚀 Perfil Técnico
 * **Rol:** Analista de Seguridad
-* **Enfoque:** Automatización de Detección de Amenazas, Automatización, Hardening en Linux, Hardening de Bases de Datos y Auditoría de Logs.
+* **Enfoque:** Automatización de Detección de Amenazas, Hardening en Linux, Hardening de Bases de Datos y Auditoría de Logs.
 * **Certificación:** Google Cybersecurity Professional.
 * **Ubicación:** España (Abierto a Remoto).
 
